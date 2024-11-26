@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciamento de estoque</title>
+    <!-- Link para o CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Gerenciamento de estoque</h1>
+
+        <!-- Formulário para adicionar produtos -->
+        <div class="form-container">
+            <label for="productName">Nome do Produto:</label>
+            <input type="text" id="productName" placeholder="Nome do produto">
+            
+            <label for="expiryDate">Data de Validade:</label>
+            <input type="date" id="expiryDate">
+            
+            <label for="batchNumber">Número do Lote:</label>
+            <input type="text" id="batchNumber" placeholder="Número do lote">
+            
+            <label for="quantity">Quantidade:</label>
+            <input type="number" id="quantity" placeholder="Quantidade de produtos">
+            
+            <button onclick="addProduct()">Adicionar Produto</button>
+        </div>
+
+        <!-- Lista de produtos cadastrados -->
+        <div id="productList"></div>
+    </div>
+
+    <!-- Link para o JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

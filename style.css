@@ -1,0 +1,124 @@
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="number"] {
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Estilos para a lista de produtos */
+.productItem {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.productItem h3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+}
+
+.deleteProductBtn, .deleteBtn {
+    cursor: pointer;
+    color: red;
+    font-size: 20px;
+    padding: 5px;
+}
+
+/* Contêiner de lotes de um produto */
+.productBatch {
+    margin-top: 10px;
+}
+
+/* Estilos para cada lote individual */
+.productBatch div {
+    margin-bottom: 5px;
+    padding: 10px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between; /* Alinha o conteúdo na linha */
+}
+
+.productBatch .red {
+    background-color: #ffcccc;
+}
+
+.productBatch .yellow {
+    background-color: #ffff99;
+}
+
+.productBatch .green {
+    background-color: #ccffcc;
+}
+
+/* Alinha a lixeira à direita de cada lote */
+.deleteBtn {
+    align-self: flex-end;  /* Alinha a lixeira à direita do lote */
+}
+
+/* Lixeira do produto */
+.deleteProductBtn {
+    font-size: 20px;
+    cursor: pointer;
+    color: red;
+    padding: 5px;
+}
+
+.deleteProductBtn:hover, .deleteBtn:hover {
+    color: darkred;
+}
